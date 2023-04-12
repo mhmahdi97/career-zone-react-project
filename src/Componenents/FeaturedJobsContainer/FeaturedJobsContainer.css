@@ -24,6 +24,20 @@
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 15px;
+    margin-bottom: 55px;
+}
+
+.btn-show-all{
+    background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+    border: 1px solid #7E90FE;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+    /* margin-left: 416px; */
+    margin-bottom: 32px;
+    padding: 19px 32px;
 }
 
 @media (max-width: 571px) {

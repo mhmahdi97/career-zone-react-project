@@ -1,11 +1,16 @@
 import React from 'react';
 import './JobDetails.css';
 import { useLoaderData } from 'react-router-dom';
+import { addToDb } from '../../utilities/fakedb';
 
 const JobDetails = () => {
     const jobData = useLoaderData();
     console.log(jobData)
     const {companyLogo, companyName, educationalRequirements, email, experiences, fulltimeOrParttime, id, jobDescription, jobResponsibility, jobTitle, location, phone, remoteOrOnsite, salary} = jobData;
+
+    const handleApplyJob = (jobData)=> {
+        addToDb(jobData.id)
+    }
     
 
     return (
@@ -34,10 +39,8 @@ const JobDetails = () => {
                             <p><strong>Email: </strong>{email}.</p>
                             <p><strong>Addres: </strong>{location}.</p>
                         </div>
-                        
-                        
                     </div>
-                    <button></button>
+                    <button onClick={()=> handleApplyJob(jobData)} className='btn-apply'>Apply Now</button>
                 </div>
             </div>
         </div>

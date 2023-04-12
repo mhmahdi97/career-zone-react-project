@@ -7,6 +7,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Main from './Componenents/Layout/Main';
 import Home from './Componenents/Home/Home';
 import JobDetails from './Componenents/JobDetails/JobDetails';
+import AppliedJobs from './Componenents/AppliedJobs/AppliedJobs';
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
           const job = data.find(details => details.id == params.id)
           return job;
         }
+      },
+      {
+        path: '/applied-jobs',
+        element: <AppliedJobs></AppliedJobs>
       },
     ]
   }

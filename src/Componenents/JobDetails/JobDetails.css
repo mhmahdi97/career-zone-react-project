@@ -8,6 +8,7 @@
 .job-details-container{
     display: flex;
     gap: 30px;
+    margin-bottom: 50px;
 }
 
 .job-description-container p{
@@ -29,6 +30,7 @@
     background: linear-gradient(90deg, rgba(126, 144, 254, 0.1) 0%, rgba(152, 115, 255, 0.1) 100%);
     border-radius: 8px;
     padding: 30px;
+    margin-bottom: 24px;
 }
 
 .job-details-title{
@@ -47,4 +49,16 @@
 
 .job-description{
     margin-bottom: 24px;
+}
+
+.btn-apply{
+    width: 100%;
+    background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+    border-radius: 8px;
+    padding: 19px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+    cursor: pointer;
 }

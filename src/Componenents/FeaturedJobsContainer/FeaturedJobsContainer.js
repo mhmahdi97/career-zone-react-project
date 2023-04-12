@@ -4,12 +4,17 @@ import FeaturedJobCard from '../FeaturedJobCard/FeaturedJobCard';
 
 const FeaturedJobsContainer = () => {
     const [jobs, setJobs] = useState([]);
+    const [showAll, setShowAll] = useState(false);
 
     useEffect(() =>{
         fetch('jobsData.json')
         .then(res => res.json())
         .then (data => setJobs(data))
     }, [])
+
+    const handleShowAll = () => {
+        setShowAll(!showAll)
+    }
 
     
 
@@ -20,12 +25,14 @@ const FeaturedJobsContainer = () => {
 
             <div className='jobs-cards-container'>
                 {
-                    jobs.map(job => <FeaturedJobCard
+                    jobs.slice(0, showAll ? 6 : 4).map(job => <FeaturedJobCard
                     key={job.id}
                     job = {job}
                     ></FeaturedJobCard>)
                 }
+
             </div> 
+            <button className='btn-show-all' onClick={handleShowAll}>{showAll ? 'See All Jobs' : 'See Less Jobs'}</button>
         </div>
 
     );
