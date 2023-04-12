@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Main from './Componenents/Layout/Main';
 import Home from './Componenents/Home/Home';
+import JobDetails from './Componenents/JobDetails/JobDetails';
 
 const router = createBrowserRouter([
   {
@@ -15,7 +16,17 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home></Home>
-      }
+      },
+      {
+        path: '/job/:id',
+        element: <JobDetails></JobDetails>,
+        loader : async ({params})=> {
+          const res = await fetch('/jobsData.json');
+          const data = await res.json();
+          const job = data.find(details => details.id == params.id)
+          return job;
+        }
+      },
     ]
   }
 ])

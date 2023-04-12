@@ -1,5 +1,6 @@
 import React from 'react';
 import './FeaturedJobCard.css';
+import { Link } from 'react-router-dom';
 
 const FeaturedJobCard = (props) => {
     const {companyLogo, companyName, educationalRequirements, email, experiences, fulltimeOrParttime, id, jobDescription, jobResponsibility, jobTitle, location, phone, remoteOrOnsite, salary} = props.job;
@@ -22,7 +23,9 @@ const FeaturedJobCard = (props) => {
                 </div>
                 <span>Salary: {salary}</span>
             </div>
-            <button className='btn-details'>View Details</button>
+            <Link to={`/job/${id}`}>
+                <button className='btn-details'>View Details</button>
+            </Link>
         </div>
     );
 };
