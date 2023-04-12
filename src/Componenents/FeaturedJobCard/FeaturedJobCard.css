@@ -1,0 +1,70 @@
+.job-card{
+    border: 1px solid #E8E8E8;
+    border-radius: 8px;
+    padding: 36px;
+}
+
+.card-logo-container{
+    margin-bottom: 28px;
+}
+
+.job-card h4{
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 33px;
+    color: #474747;
+    margin-bottom: 8px;
+}
+
+.job-card p{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #757575;
+    margin-bottom: 12px;
+}
+
+.btn-container{
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.btn-container button{
+    border: 1px solid #7E90FE;
+    border-radius: 4px;
+    padding: 9px 19px;
+    color: #9873FF;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.location-salary-container{
+    display: flex;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.location-salary-container span{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 38px;
+    color: #757575;
+}
+
+.location-container{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.btn-details{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    padding: 11px 18px;
+    background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+    border: 1px solid #7E90FE;
+    border-radius: 4px;
+}
