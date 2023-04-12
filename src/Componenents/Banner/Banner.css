@@ -41,3 +41,35 @@
     line-height: 27px;
     color: #ffffff;
 }
+
+@media (max-width: 910px) {
+    .banner{
+        flex-direction: column;
+        margin-top: 2px;
+    }
+
+    .banner-text-container{
+        width: 80%;
+        margin: 80px 0;
+    }
+
+    .banner-text-container h1{
+        font-size: 40px;
+        line-height: 42px;
+    }
+
+
+    .banner-img-container{
+        width: 80%;
+    }
+
+    .banner-text-container img{
+        width: 100%;
+    }
+}
+
+@media (max-width: 680px) {
+    .banner-text-container h1{
+        font-size: 34px;
+    }
+}
