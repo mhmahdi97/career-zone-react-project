@@ -6,5 +6,5 @@ The best features of this projects are:
  -You can see jobs by category
 
 
-Live Site Linke [Netlify](https://career-zone-mhmahdi97.netlify.app/).
+Live Site Linke [https://career-zone-mhmahdi97.netlify.app/].
 
