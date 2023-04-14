@@ -1,0 +1,80 @@
+.applied-job{
+    width: 842px;
+    /* height: 107px; */
+    border: 1px solid #95A0A7;
+    border-radius: 8px;
+    margin-bottom: 21px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    padding: 8px 25px 8px 8px;
+}
+
+.company-logo-container{
+    width: 210px;
+    height: 210px;
+    background-color: #F4F4F4;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.job-title{
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 33px;
+    color: #474747;
+    margin-bottom: 8px;
+    margin-left: 14px;
+}
+
+.company-name{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    color: #757575;
+    margin-bottom: 8px;
+    margin-left: 14px;
+}
+/* .review-item .product-title{
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+    letter-spacing: 0.0015em;
+    color: #1C2B35;
+} */
+
+.job-details{
+    flex-grow: 1;
+}
+
+.remote-fulltime-container{
+    display: flex;
+    gap: 16px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    margin-left: 14px;
+}
+
+.remote-fulltime-container button{
+    border: 1px solid #9873FF;
+    border-radius: 4px;
+    color: #7E90FE;
+    padding: 9px 19px;
+    cursor: pointer;
+}
+
+
+/* delete button styles */
+/* .btn-delete{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color:  rgba(235, 87, 87, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+} */
+

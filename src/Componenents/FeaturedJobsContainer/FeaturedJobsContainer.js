@@ -32,7 +32,7 @@ const FeaturedJobsContainer = () => {
                 }
 
             </div> 
-            <button className='btn-show-all' onClick={handleShowAll}>{showAll ? 'See All Jobs' : 'See Less Jobs'}</button>
+            <button className='btn-show-all' onClick={handleShowAll}>{showAll ? 'See Less Jobs' : 'See All Jobs'}</button>
         </div>
 
     );

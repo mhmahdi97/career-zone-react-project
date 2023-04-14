@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const FeaturedJobCard = (props) => {
     const {companyLogo, companyName, educationalRequirements, email, experiences, fulltimeOrParttime, id, jobDescription, jobResponsibility, jobTitle, location, phone, remoteOrOnsite, salary} = props.job;
-    console.log(props.job)
+    
     return (
         <div className='job-card'>
             <div className='card-logo-container'>
