@@ -1,4 +1,4 @@
-# This is the Carrer Zone website for finding jobs
+# This is the Career Zone website for finding jobs
 
 The best features of this projects are:
  - You can apply jobs
