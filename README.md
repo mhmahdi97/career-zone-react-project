@@ -1,9 +1,9 @@
 # Getting Started with Create React App
 
 The best features of this projects are:
- -You can apply jobs
- -You can filter applied jobs
- -You can see jobs by category
+ *You can apply jobs
+ *You can filter applied jobs
+ *You can see jobs by category
 
 
 Live Site Linke [https://career-zone-mhmahdi97.netlify.app/].
